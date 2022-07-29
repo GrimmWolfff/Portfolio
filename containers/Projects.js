@@ -6,7 +6,7 @@ export default function Projects (){
     const [items, setItems] = useState([]);
     useEffect(() => {
         async function getData() {
-            const data = await fetch('https://pportfolio-eight.vercel.app/api/projects');
+            const data = await fetch('/api/projects');
             const projects = await data.json();
             setItems(projects);
         }
