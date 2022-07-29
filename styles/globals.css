@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+@layer components {
+    .skillIcon {
+        @apply w-[6vw] h-[6vw] ease-in-out duration-300 hover:rotate-[360deg]
+    }
+}

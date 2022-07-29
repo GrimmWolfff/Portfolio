@@ -1,0 +1,11 @@
+Model Information:
+* title:	FV511(LOW POLY)
+* source:	https://sketchfab.com/3d-models/fv511low-poly-839a3ae535934b8f98c5cd697131739d
+* author:	lm9241221 (https://sketchfab.com/lm9241221)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "FV511(LOW POLY)" (https://sketchfab.com/3d-models/fv511low-poly-839a3ae535934b8f98c5cd697131739d) by lm9241221 (https://sketchfab.com/lm9241221) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
