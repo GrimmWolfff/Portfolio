@@ -53,7 +53,7 @@ export default function Donate() {
                 <Canvas>
                     <Stars radius={10} depth={50} count={nightMode ? 5000 : 0} factor={4} saturation={0} fade speed={3} />
                 </Canvas>
-                <div className="absolute h-1/3 sm:w-1/2 w-full sm:w-auto shadow-lg mx-auto rounded-xl bg-white flex flex-col items-center justify-evenly">
+                <div className="absolute h-1/3 sm:w-1/2 w-full shadow-lg mx-auto rounded-xl bg-white flex flex-col items-center justify-evenly">
                     <h1 className="text-xl font-semibold text-gray-700 text-center">
                     Send me some ethereum
                     </h1>
