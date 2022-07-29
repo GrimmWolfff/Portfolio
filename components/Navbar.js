@@ -35,6 +35,10 @@ export default function Navbar() {
                                     <a className="text-gray-300 hover:bg-gray-700 hover:text-white 
                                     px-3 py-2 rounded-md text-sm font-medium">Projects</a>
                                 </Link>
+                                <Link href="/donate">
+                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white 
+                                    px-3 py-2 rounded-md text-sm font-medium">Donate</a>
+                                </Link>
                             </div>
                         </div>
 

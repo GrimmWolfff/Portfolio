@@ -4,8 +4,8 @@ FaGithub as GithubIcon, FaInstagram as InstaIcon } from 'react-icons/fa';
 import { SiCodewars as CwIcon } from 'react-icons/si';
 export default function Footer() {
     return (
-        <div className="flex flex-row justify-around align-center w-full h-32 bg-zinc-900 z-50
-        text-white left-0 bottom-0 relative p-10">
+        <div className="flex flex-row justify-around align-center w-full h-28 bg-zinc-900 z-50
+        text-white left-0 bottom-0 p-10">
             <div className="w-3/5 h-full text-right text-md leading-10">ILIA SICHINAVA © ALL RIGHTS RESERVED</div>
             <div className="h-full flex flex-row justify-evenly align-center w-2/5 text-white text-5xl">
                     <Link href="https://www.facebook.com/sichinavailia/">
