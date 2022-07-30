@@ -10,7 +10,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [nightMode, setNightMode] = useRecoilState(darkMode);
     return (
-        <nav className="bg-transparent w-full absolute z-10">
+        <nav className="bg-gradient-to-br from-gray-600 to-gray-900 w-full h-16 absolute z-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
@@ -23,17 +23,9 @@ export default function Navbar() {
                                 <Link href="/">
                                     <a className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
                                 </Link>
-                                <Link href="#whoami">
+                                <Link href="/blog">
                                     <a className="text-gray-300 hover:bg-gray-700 hover:text-white 
-                                    px-3 py-2 rounded-md text-sm font-medium">Whoami</a>
-                                </Link>
-                                <Link href="#skills">
-                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white 
-                                    px-3 py-2 rounded-md text-sm font-medium">Skills</a>
-                                </Link>
-                                <Link href="#projects">
-                                    <a className="text-gray-300 hover:bg-gray-700 hover:text-white 
-                                    px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                                    px-3 py-2 rounded-md text-sm font-medium">Blog</a>
                                 </Link>
                                 <Link href="/donate">
                                     <a className="text-gray-300 hover:bg-gray-700 hover:text-white 
@@ -71,13 +63,10 @@ export default function Navbar() {
                             <a className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
                         </Link>
                         <Link href="#">
-                            <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Whoami</a>
+                            <a className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">Blog</a>
                         </Link>
                         <Link href="#">
-                            <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Skills</a>
-                        </Link>
-                        <Link href="#">
-                            <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                            <a className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium">Donate</a>
                         </Link>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { Scene }from '../components/Scene';
+import { Scene } from '../components/Scene';
 
 export default function Header() {
     const [animation1, setAnimation1] = useState();        
@@ -16,8 +16,8 @@ export default function Header() {
         )
         setAnimation2(
             <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} 
-            transition={{ duration: 1.5, times: [0, 0.5, 1] }} >
-                <span className="z-50 absolute text-center left-0 w-full">📜 Scroll Down !</span>
+            transition={{ duration: 1.5, times: [0, 0.5, 1] }} className="z-50 absolute text-center left-0 w-full break-normal">
+                <span>📜 Scroll Down !</span>
             </motion.div>
         )
         setAnimation3(
@@ -28,9 +28,9 @@ export default function Header() {
         )
     }, [])
     return (
-        <div id="header" className="fixed bg-fixed min-h-screen w-full flex flex-col items-center justify-around z-0">
+        <div id="header" className="bg-fixed min-h-screen w-full flex flex-col items-center justify-around z-0">
             <Scene />
-            <p className="text-center text-white text-[1.5rem] w-3/4">
+            <p className="text-center text-white text-[1.5rem] w-3/4 mb-40">
                 {animation3}
                 {animation1}
             </p>

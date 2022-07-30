@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 *{
-    font-family: monospace;
     scroll-behavior: smooth;
+    /* font-family: 'ZCOOL XiaoWei', serif; */
 }
+
 @layer components {
     .skillIcon {
-        @apply w-[6vw] h-[6vw] ease-in-out duration-300 hover:rotate-[360deg]
+        @apply w-16 h-16 ease-in-out duration-300 hover:rotate-[360deg]
     }
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Project from '../components/Project';
-import { motion } from 'framer-motion';
+import Title from '../components/Title';
 
 export default function Projects (){
     const [items, setItems] = useState([]);
@@ -14,10 +14,7 @@ export default function Projects (){
     }, [])
     return (
         <div className="flex flex-col w-full h-auto bg-gray-800 z-40">
-            <motion.div initial={{ width: 0 }} whileInView={{ width: "100%" }} transition={{ duration: 1 }}>
-                <h1 className="text-[2vw] text-white font-mono bg-black w-1/3 p-5 mt-2 mb-3"
-                style={{ background: 'black' }}>&gt;Projects</h1>
-            </motion.div>
+            <Title title="Projects"/>
             <div id="projects" className="flex flex-col items-center justify-evenly">
                 {items.map(item => 
                 <Project 

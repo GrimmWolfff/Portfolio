@@ -7,6 +7,7 @@ import { Stars } from "@react-three/drei";
 import { useRecoilValue } from 'recoil';
 import { darkMode } from "../global/darkThemeContext";
 import Navbar from "../components/Navbar";
+import Head from 'next/head';
 //0x36006083C211074B5188c225987c1C880593a774
 
 const startPayment = async ({ setError, setTxs, ether }) => {
@@ -48,6 +49,10 @@ export default function Donate() {
 
     return (
         <div>
+            <Head>
+                <link rel='icon' href="https://cdn3.emoji.gg/emojis/4534-wojak-ss.png"></link>
+                <title>Ilia Sichinava | Donate</title>
+            </Head>
             <Navbar />
             <form className="flex flex-col justify-center items-center p-0 m-0 h-screen w-full bg-gradient-to-tr from-gray-500 to-gray-900" onSubmit={handleSubmit}>
                 <Canvas>

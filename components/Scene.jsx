@@ -37,7 +37,7 @@ export function Scene() {
     const Box = dynamic(() => import('./Box'), { suspense: true });
     const nightMode = useRecoilValue(darkMode);
     return (
-        <Canvas style={{ height: '100vh', position: 'absolute' }}>
+        <Canvas style={{ height: '100vh', position: 'absolute', marginTop: "20vh" }}>
             <PerspectiveCamera />
             <OrbitControls enableZoom={false}/>
             <Box />
