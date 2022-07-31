@@ -6,9 +6,12 @@ import { verify } from 'jsonwebtoken';
 
 export default function Admin() {
     useEffect(() => {
-        if(localStorage.getItem('authToken') || process.env.ADMIN_EMAIL !== verify(localStorage.getItem('authToken'), process.env.JWT_SECRET).admin.email) {
-            router.push('/dashboard');
-        }    
+        const token = localStorage.getItem('authToken') || 'none'; 
+        console.log(token)
+        if(token !== 'none') {
+            if(process.env.ADMIN_EMAIL !== verify(token, process.env.JWT_SECRET).admin.email)
+                router.push('/dashboard');
+        }
     }, [])
 
     const email = useRef();
