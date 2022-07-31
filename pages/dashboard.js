@@ -18,7 +18,7 @@ export default function dashboard() {
   }, [])
   
   async function handleSubmit() {
-    const response = await post('http://localhost:3000/api/admin/posts', { 
+    const response = await post(`/api/admin/posts`, { 
       title: titleRef.current.value,
       text: textRef.current.value 
     }, { headers: { 'Content-Type':'application/json'} })

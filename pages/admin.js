@@ -16,7 +16,7 @@ export default function Admin() {
     const router = useRouter();
     const handleAuth = async () => {
         try {
-            const { data } = await axios.post('http://localhost:3000/api/admin/auth', { 
+            const { data } = await axios.post(`/api/admin/auth`, { 
                 email: email.current.value,
                 password: password.current.value 
             }, { headers: { 'Content-Type':'application/json'} })
@@ -25,7 +25,7 @@ export default function Admin() {
         } catch (error) {
             console.log(error);
         }
-    }
+    }   
     return (
         <div className="w-full h-screen flex flex-col items-center justify-around bg-gray-700">
             <Head>

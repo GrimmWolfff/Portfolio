@@ -8,13 +8,13 @@ import { darkMode } from '../global/darkThemeContext';
 import { Canvas } from '@react-three/fiber';
 import { Stars } from '@react-three/drei';
 
-
 export default function Blog() {
     const [posts, setPosts] = useState([]);
     const nightMode = useRecoilValue(darkMode);
     useEffect(() => {        
         async function getData() {
-            const response = await get('http://localhost:3000/api/admin/posts', { headers: { 'Content-Type': 'application/json' } });
+            const response = await get(`/api/admin/posts`, { headers: { 'Content-Type': 'application/json' } });
+            console.log(response)
             setPosts(response.data.posts);
         }
         getData();

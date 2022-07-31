@@ -17,10 +17,8 @@ const nextConfig = {
   env: {
     ADMIN_EMAIL: process.env.ADMIN_EMAIL,
     ADMIN_PASSWORD: process.env.ADMIN_PASSWORD,
-    JWT_SECRET: process.env.JWT_SECRET
-  },
-  api: {
-    bodyParser: false
+    JWT_SECRET: process.env.JWT_SECRET,
+    SITE_URL: process.env.SITE_URL
   }
 }
 
